@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    color: #333;
+    background: #fff;
+}
+
+header {
+    background: #f9f9f9;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 22px;
+    color: rgb(0, 123, 255);
+}
+
+.hero {
+    background: url('images/headerbg.png') no-repeat center/cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+    margin-top: 140px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 70px;
+    letter-spacing: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.hr{
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 550px;
+    border: solid blue 2px;
+}
+.hero p {
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+.btn {
+    background: rgb(0, 123, 255);
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about {
+    margin-top: 30px;
+    background-color: rgb(248, 249, 251);
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.about h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.feature i {
+    font-size: 40px;
+    color: rgb(0, 170, 255);
+    margin-bottom: 15px;
+}
+
+.portfolio {
+    background: rgb(248, 249, 251);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 400px));
+    gap: 15px;
+    margin: 30px 0 0 300px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.contact {
+    background: url('images/contactbg.png') no-repeat center/cover rgb(0, 0, 0, 0.5);
+    height: fit-content;
+    position: relative;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.contact button {
+    background: rgb(0, 123, 255);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+footer {
+    background: white;
+    color: rgb(0, 123, 255);
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+footer p{
+    color: gray;
+    margin-left: 750px;
+}
+.social a {
+    color: rgb(0, 123, 255);
+    margin: 0 8px;
+    font-size: 16px;
+    text-decoration: none;
+}
